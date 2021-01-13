@@ -2,7 +2,7 @@
 
   class mysql {
     public function Connect(){
-        $con=mysqli_connect("localhost", "root", "","data_table");
+        $con=mysqli_connect("178.128.91.86", "user", "test","myDb");
         $con->query("SET NAMES UTF8");
         return $con;       
      }
