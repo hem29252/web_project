@@ -1,6 +1,6 @@
 <?php
     include('mysql.php');
-    
+
     $mysql = new mysql();
     $con = $mysql->Connect();
 
@@ -24,7 +24,7 @@
             unlink("../resource/pdf/$filename");
         }
 
-        $query = $mysql->DeleteById($con,'Operation','Id',$id);
+        $query = $mysql->DeleteById($con,'operation','Id',$id);
         
         if($query){
             header("location: ../BackPage2.php");
@@ -34,21 +34,19 @@
 
     if(isset($_POST['check_edit_operation_id'])){
         $id = $_POST['check_edit_operation_id'];
-        $query = $mysql->ViewByOneColumn($con,'Operation','Id',$id);
+        $query = $mysql->ViewByOneColumn($con,'operation','Id',$id);
         $data = $query->fetch_assoc();
         echo json_encode($data);
     }
 
     if(isset($_POST['check_status_add_operation'])){
         $value = $_POST['name'];
-        $query = $mysql->insertOneColumn($con,'Operation','Name',$value);
+        $query = $mysql->insertOneColumn($con,'operation','Name',$value);
         
         if($query){
             header("location: ../BackPage2.php");
         }
     }
-
-
 
 ?>
 
