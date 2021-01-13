@@ -1,6 +1,6 @@
 <?php
    include('config/Works.php');
-   $query = $mysql->FetchStarData($con,'Works')
+   $query = $mysql->FetchStarData($con,'works')
 
 ?>
 <!DOCTYPE html>
