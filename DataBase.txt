@@ -1,0 +1,28 @@
+***Employee***
+tabel authorities
+ firstname 
+ lastname
+ department
+ tel
+ fax
+ email
+-----------------------------------
+**** Operation *****
+Id 
+Name
+
+***ContentOfOperation****
+Id
+Name
+PDF
+operation_id
+
+*** Degree *** 
+ Id
+ Date
+ Name
+ Degree_name
+
+
+
+
