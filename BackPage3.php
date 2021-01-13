@@ -2,7 +2,7 @@
     
     include("config/CheckUser.php");
     include('config/Degree.php');
-    $query = $mysql->FetchStarData($con,'Degree');
+    $query = $mysql->FetchStarData($con,'degree');
 ?>
 <!DOCTYPE html>
 <html>

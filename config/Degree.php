@@ -10,7 +10,7 @@
       $fullname = $_POST['fullname'];
       $degree_name = $_POST['name_degree'];
 
-      $query = $mysql->UpdateThreeColumn($con,'Degree','Dates','FullName','DegreeName',$dates,$fullname,$degree_name,'Id',$id);
+      $query = $mysql->UpdateThreeColumn($con,'degree','Dates','FullName','DegreeName',$dates,$fullname,$degree_name,'Id',$id);
 
       if($query){
          header("location: ../BackPage3.php");
@@ -22,7 +22,7 @@
 
    if(isset($_GET['check_delete_degree_id'])){
       $id = $_GET['check_delete_degree_id'];
-      $query = $mysql->DeleteById($con,'Degree','Id',$id);
+      $query = $mysql->DeleteById($con,'degree','Id',$id);
       
       if($query){
          header("location: ../BackPage3.php");
@@ -49,7 +49,7 @@
 
    if(isset($_POST['check_view_edit_id'])){
       $id = $_POST['check_view_edit_id'];
-      $query = $mysql->ViewByOneColumn($con,'Degree','Id',$id);
+      $query = $mysql->ViewByOneColumn($con,'degree','Id',$id);
       $data = $query->fetch_assoc();
       echo json_encode($data);
    }
