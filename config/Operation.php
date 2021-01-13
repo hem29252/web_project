@@ -1,12 +1,13 @@
 <?php
     include('mysql.php');
+    
     $mysql = new mysql();
     $con = $mysql->Connect();
 
     if(isset($_POST['check_status_edit_operation'])){
         $id = $_POST['id'];
         $value = $_POST['name'];
-        $query = $mysql->UpdateOneColumn($con,'Operation','Name',$value,'Id',$id);
+        $query = $mysql->UpdateOneColumn($con,'operation','Name',$value,'Id',$id);
         if($query){
             header("location: ../BackPage2.php");
         }
