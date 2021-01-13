@@ -1,7 +1,7 @@
 <?php 
     include("config/CheckUser.php");
     include('config/Operation.php');
-    $query1 = $mysql->FetchStarData($con,'Operation');
+    $query1 = $mysql->FetchStarData($con,'operation');
  
 ?>
 <!DOCTYPE html>
