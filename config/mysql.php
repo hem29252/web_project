@@ -17,6 +17,12 @@
         return $query;
     }
 
+    public function FetchStarDataOrderByDESC($con,$table,$column){
+      $sql = "SELECT * FROM $table ORDER BY $column DESC";
+      $query = $con->query($sql);
+      return $query;
+  }
+
     public function ViewByOneColumn($con,$table,$column,$value){
       $sql = "SELECT * FROM $table WHERE $column = '$value'";
       $query = $con->query($sql);

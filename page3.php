@@ -1,6 +1,6 @@
 <?php 
     include('config/Degree.php');
-    $query = $mysql->FetchStarData($con,'degree');
+    $query = $mysql->FetchStarDataOrderByDESC($con,'degree','Dates');
 ?>
 <!DOCTYPE html>
 <html>
