@@ -73,7 +73,7 @@
                               <tr>
                                 <td><?php echo $degree['Dates']; ?></td>
                                 <td style="text-align: left;"><?php echo $degree['FullName']; ?></td>
-                                <td><?php echo $degree['DegreeName']; ?></td>
+                                <td><a href="<?php echo $degree['link']; ?>"><?php echo $degree['DegreeName']; ?></a></td>
                                 <td>
                                   <button class="btn btn-warning btn_edit_degree" data-toggle="modal" data-target="#edit_modal_degree" id="<?php echo $degree['Id']; ?>">แก้ไข</button>                               
                                 </td>
