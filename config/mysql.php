@@ -84,8 +84,8 @@
       return $rs;
     }
 
-    public function insertDegree($con,$value1,$value2,$value3){
-      $sql = "INSERT INTO `degree` (`Id`, `Dates`, `FullName`, `DegreeName`) VALUES (NULL, '$value1', '$value2', '$value3');";
+    public function insertDegree($con,$value1,$value2,$value3,$value4){
+      $sql = "INSERT INTO `degree` (`Id`, `Dates`, `FullName`, `DegreeName`, `link`) VALUES (NULL, '$value1', '$value2', '$value3','$value4');";
       $rs = $con->query($sql);
       return $rs;  
     }

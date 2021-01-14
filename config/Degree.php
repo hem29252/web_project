@@ -35,9 +35,10 @@
       $dates = $_POST['dates'];
       $fullname = $_POST['fullname'];
       $degree_name = $_POST['name_degree'];
+      $link = $_POST['link'];
       //echo $degree_name;
       
-      $query = $mysql->insertDegree($con,$dates,$fullname,$degree_name);
+      $query = $mysql->insertDegree($con,$dates,$fullname,$degree_name,$link);
       
       if($query){
          header("location: ../BackPage3.php");
