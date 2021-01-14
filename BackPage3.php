@@ -105,6 +105,7 @@
                               <input type="text" name="fullname" class="form-control w-100" placeholder="ชื่อ-นามสกุล">
                               <label class="col-form-label">ชื่อปริญญา</label>
                               <textarea class="form-control" name="name_degree" placeholder="ชื่อปริญญา"></textarea>
+                              <input type="text" name="link" placeholder="ใส่ลิงค์">
                               <input type="hidden" name="check_status_add_degree" value="1">
                              </div>
                             </form>
