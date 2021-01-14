@@ -59,12 +59,12 @@
                             <div class="container">
                             <div class="row">
                              <?php while($auths = $authoriries->fetch_assoc()){ ?>
-                              <div class="col-sm-4 mb-5" >
-                               <div class="card" style="border: solid 2px #f26522; background-color: #FFEBD2; height: 200px;">
+                              <div class="col-sm-4 mb-5">
+                               <div class="card" style="border: solid 2px #f26522; background-color: #FFEBD2;">
                                <br>
                                 <center><div><img style="border: solid 2px #f26522 ; border-radius: 10px;" class="card-top-img" src="resource/images/upload/<?php echo $auths['image'];?>" width="70%" height="290px" alt="Card image"></div></center>
                                 <div class="card-body">
-                                 <p class="card-text" style="margin: 0% 10% 0% 10%; font-size: 18px;" >            
+                                 <p class="card-text" style="margin: 0% 10% 0% 5%; font-size: 18px;" >            
                                   <?php echo $auths['FirstName']."  ".$auths['LastName'].'<br/>';
                                         echo $auths['Department'].'<br/>';
                                         echo 'โทรศัพท์ : '.$auths['Tel'].'<br/>';
