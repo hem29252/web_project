@@ -9,8 +9,9 @@
       $dates = $_POST['dates'];
       $fullname = $_POST['fullname'];
       $degree_name = $_POST['name_degree'];
+      $link = $_POST['link'];
 
-      $query = $mysql->UpdateThreeColumn($con,'degree','Dates','FullName','DegreeName',$dates,$fullname,$degree_name,'Id',$id);
+      $query = $mysql->UpdateFourColumn($con,'degree','Dates','FullName','DegreeName','link',$dates,$fullname,$degree_name,$link,'Id',$id);
 
       if($query){
          header("location: ../BackPage3.php");

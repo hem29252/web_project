@@ -47,6 +47,12 @@
       return $query;
     }
 
+    public function UpdateFourColumn($con,$table,$column1,$column2,$column3,$column4,$value1,$value2,$value3,$value4,$where,$id){
+      $sql = "UPDATE $table SET $column1 = '$value1', $column2 = '$value2', $column3 = '$value3' WHERE $where = '$id'";
+      $query = $con->query($sql);
+      return $query;
+    }
+
     public function UpdateSixColumn($con,$table,$column1,$column2,$column3,$column4,$column5,$column6,$value1,$value2,$value3,$value4,$value5,$value6,$where,$id){
       $sql = "UPDATE $table SET $column1 = '$value1', $column2 = '$value2', $column3 = '$value3', $column4 = '$value4', $column5 = '$value5', $column6 = '$value6' WHERE $where = '$id' ";
       $query = $con->query($sql);
