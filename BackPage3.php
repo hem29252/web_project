@@ -106,7 +106,7 @@
                               <label class="col-form-label">ชื่อปริญญา</label>
                               <textarea class="form-control" name="name_degree" placeholder="ชื่อปริญญา"></textarea>
                               <label class="col-form-label">ลิงค์</label>
-                              <input type="text" name="link" placeholder="ใส่ลิงค์" class="form-control w-100">
+                              <input type="text" name="link" placeholder="ใส่ลิงค์ www" class="form-control w-100">
                               <input type="hidden" name="check_status_add_degree" value="1">
                              </div>
                             </form>
@@ -139,6 +139,8 @@
                               <input type="text" name="fullname" class="form-control w-100" id="edit_fullname">
                               <label class="col-form-label">ชื่อปริญญา</label>
                               <textarea class="form-control" name="name_degree" id="edit_degree_name"></textarea>
+                              <label class="col-form-label">ลิงค์</label>
+                              <input type="text" name="link" placeholder="ใส่ลิงค์ www" id="edit_link" class="form-control w-100">
                               <input type="hidden" name="check_status_edit_degree" value="1">
                               <input type="hidden" name="id" id="edit_degree_id">
                              </div>
