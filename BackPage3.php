@@ -140,7 +140,7 @@
                               <label class="col-form-label">ชื่อปริญญา</label>
                               <textarea class="form-control" name="name_degree" id="edit_degree_name"></textarea>
                               <label class="col-form-label">ลิงค์</label>
-                              <input type="text" name="link" placeholder="ใส่ลิงค์ www" id="edit_link" class="form-control w-100">
+                              <input type="text" name="link" placeholder="ใส่ลิงค์ www" id="edit_get_link" class="form-control w-100">
                               <input type="hidden" name="check_status_edit_degree" value="1">
                               <input type="hidden" name="id" id="edit_degree_id">
                              </div>
@@ -192,7 +192,7 @@
                                   $('#edit_date').val(data.Dates);
                                   $('#edit_fullname').val(data.FullName);
                                   $('#edit_degree_name').val(data.DegreeName)
-                                  $('#edit_link').val(data.link)
+                                  $('#edit_get_link').val(data.link)
                                 }
                               });
                             });
