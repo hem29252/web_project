@@ -61,7 +61,7 @@
                                ?>
                               <tr>
                                 <td><?php echo $degree['Dates']; ?></td>
-                                <td><?php echo $degree['FullName']; ?></td>
+                                <td style="text-align: left;"><?php echo $degree['FullName']; ?></td>
                                 <td><?php echo $degree['DegreeName']; ?></td>
                               </tr>
                               <?php
