@@ -49,7 +49,7 @@
                          <tr>
                            <td >
 
-                            <img src="resource/images/map.png">
+                            <img src="resource/images/map.png" style="width: 300px;>
                            </td>
                              <td class="con">
                               งานโครงการและกิจกรรมทางวิชาการ ส่วนส่งเสริมวิชาการ <br/>
