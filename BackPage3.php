@@ -106,7 +106,7 @@
                               <label class="col-form-label">ชื่อปริญญา</label>
                               <textarea class="form-control" name="name_degree" placeholder="ชื่อปริญญา"></textarea>
                               <label class="col-form-label">ลิงค์</label>
-                              <input type="text" name="link" placeholder="ใส่ลิงค์ www" class="form-control w-100">
+                              <input type="text" name="link" placeholder="ใส่ลิงค์ เช่น http://www.name.com" class="form-control w-100">
                               <input type="hidden" name="check_status_add_degree" value="1">
                              </div>
                             </form>
