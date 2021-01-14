@@ -192,6 +192,7 @@
                                   $('#edit_date').val(data.Dates);
                                   $('#edit_fullname').val(data.FullName);
                                   $('#edit_degree_name').val(data.DegreeName)
+                                  $('#edit_link').val(data.link)
                                 }
                               });
                             });
