@@ -29,7 +29,7 @@
               </button>
               <div class="dropdown-container">
                 <a href="index.php">บุคลากร</a>
-                <a href="Page4.php">งานและภาระหน้าที่</a>
+                <a href="page4.php">งานและภาระหน้าที่</a>
               </div>
               <a href="page2.php">ขั้นตอนการดำเนินงาน</a>
               <a href="page3.php">ทำเนียบดุษฎีบัณฑิตกิตติมศักดิ์</a>
