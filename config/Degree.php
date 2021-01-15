@@ -54,13 +54,21 @@
 
    if(isset($_GET['check_delete_degree_id'])){
       $id = $_GET['check_delete_degree_id'];
+      $image = $_GET['delete_image'];
       $query = $mysql->DeleteById($con,'degree','Id',$id);
+      $status = 0;
       
       if($query){
-         header("location: ../BackPage3.php");
-      }else{
-         echo "Error";
+         unlink("../resource/images/upload/$image");
+         $status = 1;
+         
       }
+
+      if($status == 1){
+         header("location: ../BackPage3.php");
+      }
+
+
    }
 
    if(isset($_POST['check_status_add_degree'])){

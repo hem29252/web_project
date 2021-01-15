@@ -78,7 +78,7 @@
                                   <button class="btn btn-warning btn_edit_degree" data-toggle="modal" data-target="#edit_modal_degree" id="<?php echo $degree['Id']; ?>">แก้ไข</button>                               
                                 </td>
                                 <td>
-                                <a onclick="return confirm('ลบข้อมูล?')" href="config/Degree.php?check_delete_degree_id=<?php echo $degree['Id'];?>" class="btn btn-danger text-white"> ลบ </a>
+                                <a onclick="return confirm('ลบข้อมูล?')" href="config/Degree.php?check_delete_degree_id=<?php echo $degree['Id'];?>&&delete_image=<?php echo $degree['image']; ?>" class="btn btn-danger text-white"> ลบ </a>
                                 </td>
                               </tr>
                               <?php
@@ -141,7 +141,7 @@
                               <input type="text" name="dates" id="edit_date" class="form-control w-50" ><br/>
                               <input type="hidden" id="filename_delete" name="filename_delete">
                               <labe>รูปภาพ</labe><br>
-                              <img id="image_edit" width="100px" height="100px">
+                              <img id="image_edit" width="97px" height="100px">
                               <input type="file" name="file"><br>
                               <labe>ชื่อ-นามสกุล</labe>
                               <input type="text" name="fullname" class="form-control w-100" id="edit_fullname">
