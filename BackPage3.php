@@ -135,7 +135,7 @@
                             </button>
                            </div>
                            <div class="modal-body">
-                            <form id="form_eidt_degree" action="config/Degree.php" method="POST">
+                            <form id="form_eidt_degree" action="config/Degree.php" method="POST" enctype="multipart/form-data">
                              <div class="form-group">
                               <labe>ปีการศึกษา</labe><br/>
                               <input type="text" name="dates" id="edit_date" class="form-control w-50" ><br/>
