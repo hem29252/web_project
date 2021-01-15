@@ -141,7 +141,7 @@
                               <input type="text" name="dates" id="edit_date" class="form-control w-50" ><br/>
                               <input type="hidden" id="filename_delete" name="filename_delete">
                               <labe>รูปภาพ</labe><br>
-                              <img id="image_edit" width="97px" height="100px">
+                              <img id="image_edit" width="95px" height="100px">
                               <input type="file" name="file"><br>
                               <labe>ชื่อ-นามสกุล</labe>
                               <input type="text" name="fullname" class="form-control w-100" id="edit_fullname">
