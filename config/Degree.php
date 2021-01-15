@@ -5,18 +5,23 @@
    $con = $mysql->Connect();
 
    if(isset($_POST['check_status_edit_degree'])){
-      $id = $_POST['id'];
-      $dates = $_POST['dates'];
-      $fullname = $_POST['fullname'];
-      $degree_name = $_POST['name_degree'];
-      $link = $_POST['link'];
-
-      $query = $mysql->UpdateFourColumn($con,'degree','Dates','FullName','DegreeName','link',$dates,$fullname,$degree_name,$link,'Id',$id);
-
-      if($query){
-         header("location: ../BackPage3.php");
+      $check_file = $_FILES["file"]["name"];
+      if(empty($check_file)){
+         $id = $_POST['id'];
+         $dates = $_POST['dates'];
+         $fullname = $_POST['fullname'];
+         $degree_name = $_POST['name_degree'];
+         $link = $_POST['link'];
+   
+         $query = $mysql->UpdateFourColumn($con,'degree','Dates','FullName','DegreeName','link',$dates,$fullname,$degree_name,$link,'Id',$id);
+   
+         if($query){
+            header("location: ../BackPage3.php");
+         }else{
+            echo "Error";
+         }
       }else{
-         echo "Error";
+         echo "No File";
       }
             
    }
