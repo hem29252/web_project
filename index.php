@@ -50,7 +50,7 @@
                         <div class= detail>
                           <table>
                             <tr> 
-                              ส่วนส่งเสริมวิชาการ / งานโครงการและกิจกรรมทางวิชาการ / <a href="index.html" class="a" target="_blank" >หน้าแรก</a> / <a href="index.html" class="a1" target="_blank">บุคลากร</a>
+                              ส่วนส่งเสริมวิชาการ / งานธุรการและสนับสนุนวิชาการ / <a href="index.html" class="a" target="_blank" >หน้าแรก</a> / <a href="index.html" class="a1" target="_blank">บุคลากร</a>
                             </tr>
                            </table>
                            <br/>
