@@ -44,7 +44,7 @@
                       <div class= detail>
                       <table>
                         <tr> 
-                          ส่วนส่งเสริมวิชาการ / งานโครงการและกิจกรรมทางวิชาการ / <a href="index.html" class="a" target="_blank" >หน้าแรก</a> / <a href="page4.html" class="a1" target="_blank">ติดต่อเรา</a>
+                          ส่วนส่งเสริมวิชาการ / งานธุรการและสนับสนุนวิชาการ / <a href="index.html" class="a" target="_blank" >หน้าแรก</a> / <a href="page4.html" class="a1" target="_blank">ติดต่อเรา</a>
                         </tr>
                        </table>
                        <br/>
@@ -55,7 +55,7 @@
                             <img src="resource/images/map.png" style="width: 300px;">
                            </td>
                              <td class="con">
-                              งานโครงการและกิจกรรมทางวิชาการ ส่วนส่งเสริมวิชาการ <br/>
+                             งานธุรการและสนับสนุนวิชาการ ส่วนส่งเสริมวิชาการ <br/>
 
                               ชั้น 2 อาคารบริหาร มหาวิทยาลัยเทคโนโลยีสุรนารี<br/>
                               
