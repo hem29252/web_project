@@ -139,6 +139,7 @@
                              <div class="form-group">
                               <labe>ปีการศึกษา</labe><br/>
                               <input type="text" name="dates" id="edit_date" class="form-control w-50" ><br/>
+                              <input type="hidden" id="filename_delete" name="filename_delete">
                               <labe>รูปภาพ</labe><br>
                               <img id="image_edit" width="100px" height="100px">
                               <input type="file" name="file"><br>
@@ -200,6 +201,7 @@
                                   $('#edit_fullname').val(data.FullName);
                                   $('#edit_degree_name').val(data.DegreeName)
                                   $('#edit_get_link').val(data.link)
+                                  $('#filename_delete').val(data.image)
                                   $('#image_edit').attr('src',"resource/images/upload/"+data.image)
                                 }
                               });

@@ -21,7 +21,33 @@
             echo "Error";
          }
       }else{
-         echo "No File";
+         //file
+         $filename   = uniqid() . "-" . time(); // 5dab1961e93a7-1571494241
+         $extension  = pathinfo( $_FILES["file"]["name"], PATHINFO_EXTENSION ); // jpg
+         $basename   = $filename . "." . $extension; // 5dab1961e93a7_1571494241.jpg
+         $source       = $_FILES["file"]["tmp_name"];
+         $destination  = "../resource/images/upload/{$basename}";
+
+         $id = $_POST['id'];
+         $dates = $_POST['dates'];
+         $fullname = $_POST['fullname'];
+         $degree_name = $_POST['name_degree'];
+         $link = $_POST['link'];
+         $image = $basename;
+         $filenamedelete = $_POST['filename_delete'];
+         $status = 0;
+   
+         $query = $mysql->UpdateFourColumn($con,'degree','Dates','FullName','DegreeName','link',$dates,$fullname,$degree_name,$link,'Id',$id);
+   
+         if($query){
+            move_uploaded_file( $source, $destination );
+            unlink("../resource/images/upload/$filenamedelete");
+            $status = 1;
+         }
+
+         if($status == 1){
+            header("location: ../BackPage3.php");
+         }
       }
             
    }
