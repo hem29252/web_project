@@ -103,7 +103,7 @@
                               <input type="text" name="dates" class="form-control w-50" placeholder="พ.ศ."><br/>
                               <hr>
                               <labe>รูปภาพ</labe><br>
-                              <input type="file" name="file" >
+                              <input type="file" name="file">
                               <hr>
                               <labe>ชื่อ-นามสกุล</labe>
                               <input type="text" name="fullname" class="form-control w-100" placeholder="ชื่อ-นามสกุล">
@@ -139,6 +139,9 @@
                              <div class="form-group">
                               <labe>ปีการศึกษา</labe><br/>
                               <input type="text" name="dates" id="edit_date" class="form-control w-50" ><br/>
+                              <labe>รูปภาพ</labe><br>
+                              <img id="image_edit" width="100px" height="100px">
+                              <input type="file" name="file">
                               <labe>ชื่อ-นามสกุล</labe>
                               <input type="text" name="fullname" class="form-control w-100" id="edit_fullname">
                               <label class="col-form-label">ชื่อปริญญา</label>
@@ -197,6 +200,7 @@
                                   $('#edit_fullname').val(data.FullName);
                                   $('#edit_degree_name').val(data.DegreeName)
                                   $('#edit_get_link').val(data.link)
+                                  $('#image_edit').attr('src',"resource/images/upload/"+data.image)
                                 }
                               });
                             });
