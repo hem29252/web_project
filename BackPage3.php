@@ -102,7 +102,7 @@
                               <labe>ปีการศึกษา</labe><br/>
                               <input type="text" name="dates" class="form-control w-50" placeholder="พ.ศ."><br/>
                               <labe>รูปภาพ</labe>
-                              <input type="file" name="file" class="form-control">
+                              <input type="file" name="file" >
                               <labe>ชื่อ-นามสกุล</labe>
                               <input type="text" name="fullname" class="form-control w-100" placeholder="ชื่อ-นามสกุล">
                               <label class="col-form-label">ชื่อปริญญา</label>
