@@ -62,7 +62,7 @@
                                ?>
                               <tr>
                                 <td><?php echo $degree['Dates']; ?></td>
-                                <td><img style="border: solid 1px #f26522;" src="resource/images/upload/<?php echo $degree['image'];?>" width="250px" height="150px"></td>
+                                <td><img style="border: solid 1px #f26522;" src="resource/images/upload/<?php echo $degree['image'];?>" width="150px" height="200px"></td>
                                 <td style="text-align: left;"><?php echo $degree['FullName']; ?></td>
                                 <td><a href="<?php echo $degree['link']; ?>"><?php echo $degree['DegreeName']; ?></a></td>
                               </tr>
