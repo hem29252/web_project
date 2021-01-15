@@ -59,8 +59,8 @@
                             <div class="container">
                             <div class="row">
                              <?php while($auths = $authoriries->fetch_assoc()){ ?>
-                              <div class="col-sm-4 mb-5">
-                               <div class="card" style="border: solid 2px #f26522; background-color: #FFEBD2;">
+                              <div class="col-sm-4 mb-5 bg-white rounded">
+                               <div class="card" >
                                <br>
                                 <center><div><img style="border: solid 2px #f26522 ; border-radius: 10px;" class="card-top-img" src="resource/images/upload/<?php echo $auths['image'];?>" width="70%" height="290px" alt="Card image"></div></center>
                                 <div class="card-body">
