@@ -61,7 +61,8 @@
                                ?>
                               <tr>
                                 <td><?php echo $degree['Dates']; ?></td>
-                                <td style="text-align: left;"><?php echo $degree['FullName']; ?></td>
+                                <td><img src="resource/images/upload/<?php echo $degree['FullName'];?>"></td>
+                                <td style="text-align: left;"><?php echo $degree['image']; ?></td>
                                 <td><a href="<?php echo $degree['link']; ?>"><?php echo $degree['DegreeName']; ?></a></td>
                               </tr>
                               <?php
