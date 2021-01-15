@@ -62,6 +62,7 @@
                             <table >
                               <tr>
                                 <th class="text-center">ปีการศึกษา</th>
+                                <th>รูปภาพ</th>
                                 <th class="text-center"> รายนาม </th>
                                 <th class="text-center">ชื่อปริญญา</th>
                                 <th></th>
@@ -72,6 +73,7 @@
                                ?> 
                               <tr>
                                 <td><?php echo $degree['Dates']; ?></td>
+                                <td><img src="resource/images/upload/<?php echo $degree['image'];?>" width="100px" height="100px"></td>
                                 <td style="text-align: left;"><?php echo $degree['FullName']; ?></td>
                                 <td><a href="<?php echo $degree['link']; ?>"><?php echo $degree['DegreeName']; ?></a></td>
                                 <td>
