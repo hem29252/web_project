@@ -41,7 +41,6 @@
             $query = $mysql->UpdateSevenColumn($con,'authorities','FirstName','LastName','Department','Tel','Fax','Email','image',$fname,$lname,$department,$tel,$fax,$email,$image,'Id',$id);
             $staus = 0;
             if($query){
-                echo $filenamedelete;
                 move_uploaded_file( $source, $destination );
                 unlink("../resource/images/upload/$filenamedelete");
                 $status = 1;

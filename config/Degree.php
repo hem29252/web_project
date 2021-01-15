@@ -46,14 +46,20 @@
       $degree_name = $_POST['name_degree'];
       $link = $_POST['link'];
       $image = $basename;
+      $status = 0;
       
       
       $query = $mysql->insertDegree($con,$dates,$fullname,$degree_name,$link,$image);
       
       if($query){
-         header("location: ../BackPage3.php");
+         move_uploaded_file( $source, $destination );
+         $status = 1;
       }else{
          echo "Error";
+      }
+
+      if($status == 1){
+         header("location: ../BackPage3.php");
       }
 
    }
