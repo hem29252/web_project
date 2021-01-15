@@ -33,13 +33,22 @@
    }
 
    if(isset($_POST['check_status_add_degree'])){
+      //file
+      $filename   = uniqid() . "-" . time(); // 5dab1961e93a7-1571494241
+      $extension  = pathinfo( $_FILES["file"]["name"], PATHINFO_EXTENSION ); // jpg
+      $basename   = $filename . "." . $extension; // 5dab1961e93a7_1571494241.jpg
+      $source       = $_FILES["file"]["tmp_name"];
+      $destination  = "../resource/images/upload/{$basename}";
+      
+      
       $dates = $_POST['dates'];
       $fullname = $_POST['fullname'];
       $degree_name = $_POST['name_degree'];
       $link = $_POST['link'];
-      //echo $degree_name;
+      $image = $basename;
       
-      $query = $mysql->insertDegree($con,$dates,$fullname,$degree_name,$link);
+      
+      $query = $mysql->insertDegree($con,$dates,$fullname,$degree_name,$link,$image);
       
       if($query){
          header("location: ../BackPage3.php");
