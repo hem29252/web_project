@@ -141,7 +141,7 @@
                               <input type="text" name="dates" id="edit_date" class="form-control w-50" ><br/>
                               <labe>รูปภาพ</labe><br>
                               <img id="image_edit" width="100px" height="100px">
-                              <input type="file" name="file">
+                              <input type="file" name="file"><br>
                               <labe>ชื่อ-นามสกุล</labe>
                               <input type="text" name="fullname" class="form-control w-100" id="edit_fullname">
                               <label class="col-form-label">ชื่อปริญญา</label>
