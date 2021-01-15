@@ -37,7 +37,7 @@
          $filenamedelete = $_POST['filename_delete'];
          $status = 0;
    
-         $query = $mysql->UpdateFourColumn($con,'degree','Dates','FullName','DegreeName','link',$dates,$fullname,$degree_name,$link,'Id',$id);
+         $query = $mysql->UpdateFiveColumn($con,'degree','Dates','FullName','DegreeName','link','image',$dates,$fullname,$degree_name,$link,$image,'Id',$id);
    
          if($query){
             move_uploaded_file( $source, $destination );
