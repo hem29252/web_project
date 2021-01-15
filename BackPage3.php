@@ -104,7 +104,7 @@
                               <labe>ปีการศึกษา</labe><br/>
                               <input type="text" name="dates" class="form-control w-50" placeholder="พ.ศ."><br/>
                               <hr>
-                              <labe>รูปภาพ</labe><br>
+                              <label>รูปภาพ 150 x 250</label><br>
                               <input type="file" name="file">
                               <hr>
                               <labe>ชื่อ-นามสกุล</labe>
