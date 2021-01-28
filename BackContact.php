@@ -21,7 +21,7 @@
             </div>
             <div class=menu>
               <div class="head-menu">
-                งานโครงการและกิจกรรมทางวิชาการ
+                งานธุรการและสนับสนุนวิชาการ
               </div>
                 <a href="Backend01.php">หน้าแรก</a>
                 <button class="dropdown-btn">เกี่ยวกับเรา

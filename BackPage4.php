@@ -24,12 +24,12 @@
         <div class=header>
           <div class="text-image">
             <img src="resource/images/sut.jpg" width="100%" height="460px">
-            <div class="centered">งานโครงการและกิจกรรมทางวิชาการ</div>
+            <div class="centered">งานธุรการและสนับสนุนวิชาการ</div>
             </div>
           </div>
           <div class=menu>
               <div class="head-menu">
-                งานโครงการและกิจกรรมทางวิชาการ
+                งานธุรการและสนับสนุนวิชาการ
               </div>
                 <a href="Backend01.php">หน้าแรก</a>
                 <button class="dropdown-btn">เกี่ยวกับเรา
